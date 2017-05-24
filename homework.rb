@@ -28,9 +28,11 @@ for line in lines
 end
 puts index
 # 5. Add 'Airport' to the start of the array
-
+lines.unshift("Airport")
+puts lines[0]
 
 # 6. Add 'York Place' to the end of the array
+
 
 # 7. Remove 'Edinburgh Park' from the array using it's name
 
