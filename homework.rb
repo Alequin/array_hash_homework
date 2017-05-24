@@ -13,6 +13,12 @@ puts lines[1]
 puts lines[4]
 puts lines[-1]
 puts lines.last(1)[0]
+puts lines.at(4)
+princes_street = lines.pop
+puts princes_street
+
+# Adding Princes street in again after pop for other questions
+lines.push(princes_street)
 
 # 4. Work out the index position of 'Haymarket'
 index = 0
@@ -22,6 +28,7 @@ for line in lines
 end
 puts index
 # 5. Add 'Airport' to the start of the array
+
 
 # 6. Add 'York Place' to the end of the array
 
