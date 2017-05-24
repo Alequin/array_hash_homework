@@ -45,6 +45,7 @@ p lines
 lines.insert(1, "Edinburgh Park")
 
 # 9. Reverse the positions of the stops in the array
+p lines.reverse()
 
 ### B. Given the following data structure:
 
