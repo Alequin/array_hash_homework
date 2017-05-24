@@ -12,6 +12,7 @@ puts lines[1]
 # 3. How many ways can we return 'Princes Street' from the array?
 puts lines[4]
 puts lines[-1]
+puts lines.last
 puts lines.last(1)[0]
 puts lines.at(4)
 princes_street = lines.pop
@@ -32,7 +33,8 @@ lines.unshift("Airport")
 puts lines[0]
 
 # 6. Add 'York Place' to the end of the array
-
+lines.push("York Place")
+puts lines.last()
 
 # 7. Remove 'Edinburgh Park' from the array using it's name
 
