@@ -17,8 +17,6 @@ puts lines.last(1)[0]
 puts lines.at(4)
 princes_street = lines.pop
 puts princes_street
-
-# Adding Princes street in again after pop for other questions
 lines.push(princes_street)
 
 # 4. Work out the index position of 'Haymarket'
@@ -37,8 +35,14 @@ lines.push("York Place")
 puts lines.last()
 
 # 7. Remove 'Edinburgh Park' from the array using it's name
+removed_val = lines.delete("Edinburgh Park")
+p lines
+lines.insert(1, "Edinburgh Park")
 
 # 8. Delete 'Edinburgh Park' from the array by index
+removed_val = lines.delete_at(1)
+p lines
+lines.insert(1, "Edinburgh Park")
 
 # 9. Reverse the positions of the stops in the array
 
