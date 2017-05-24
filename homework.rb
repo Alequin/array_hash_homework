@@ -18,6 +18,9 @@ puts lines.at(4)
 princes_street = lines.pop
 puts princes_street
 lines.push(princes_street)
+princes_street = lines.delete_at(4)
+puts princes_street
+lines.push(princes_street)
 
 # 4. Work out the index position of 'Haymarket'
 index = 0
@@ -38,14 +41,17 @@ puts lines.last()
 removed_val = lines.delete("Edinburgh Park")
 p lines
 lines.insert(1, "Edinburgh Park")
+puts
 
 # 8. Delete 'Edinburgh Park' from the array by index
 removed_val = lines.delete_at(1)
 p lines
 lines.insert(1, "Edinburgh Park")
+puts
 
 # 9. Reverse the positions of the stops in the array
 p lines.reverse()
+puts
 
 ### B. Given the following data structure:
 
@@ -63,10 +69,12 @@ puts my_hash["two"]
 # 4. How would you add `{3 => "Three"}` to the hash?
 my_hash[3] = "Three"
 p my_hash
+puts
 
 # 5. How would you add `{:four => 4}` to the hash?
 my_hash[:four] = 4
 p my_hash
+puts
 
 ### C. Given the following data structure:
 
@@ -127,7 +135,7 @@ puts users["Erik"][:home_town]
 
 # 8. Add a pet dog to Erik called "Fluffy"
 users["Erik"][:pets]["Fluffy"] = :dog
-p users["Erik"][:pets]
+puts users["Erik"][:pets]["Fluffy"]
 
 # 9. Add yourself to the users hash
 users["James"] = {
@@ -138,4 +146,8 @@ users["James"] = {
     "Teddy" => :dog
   }
 }
-puts users["James"]
+
+puts
+user_name = "James"
+puts user_name
+puts users[user_name]
