@@ -52,6 +52,7 @@ p lines.reverse()
 my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
 # 1. How would you return the string `"One"`?
+puts my_hash[1]
 
 # 2. How would you return the string `"Two"`?
 
